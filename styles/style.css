@@ -7,14 +7,45 @@ body {
     margin: 0px;
 }
 
+h2, h3, h4 {
+    margin: 0px;
+    padding: 10px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    font-weight: bold;
+}
+
 div {
     display: block /* Displays an element as a block element (like <p>)*/
 }
 
 .flex-container {
-    display: flex; /* FLEX */
-    justify-content: center; /* horizontally centers items */
+    display: flex; /* FLEX 
+                   allows photos in Tea section to 
+                   center and 
+                   wrap in  
+                   3 row 
+                   2 row layout 
+                   * Note: The Width of Div Class "Main" 1200px limits 
+                   Tea section to a max of 3 photos 
+                   no matter how wide I stretch screen
+                   If the screen was set to a % instead of pixels instead,
+                   the first row could expand beyond 3 photos
+                   But the Flex behavior is constrained by the
+                   parent container Div Width
+                   */
+
+    justify-content: center; /* centers Tea section photos. otherwise, they'd align left */
     flex-wrap: wrap;  /* wrap flex items to next line as needed */
+                     /* wrap gives photos in Tea section a nice 3 row, 2 row layout */
 }
 
 header {
@@ -77,4 +108,20 @@ nav span {
     width: 100%; /* ensures section spans width of page */
     margin: auto; /* helps background image fill out page 
                      vertically centers word content */
+}
+
+#store {
+    height: 700px;
+    width: 1000px;
+    padding-top: 70px;
+    margin: auto;
+}
+.item {
+    padding: 5px;
+}
+
+.item img {
+    height: 200px;
+    display: block;
+    margin: 10px;
 }
