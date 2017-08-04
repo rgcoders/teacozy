@@ -1,0 +1,56 @@
+body {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    background-color: black;
+    font-size: 22px;
+    text-align: center;
+    margin: 0px;
+}
+
+.flex-container {
+    display: flex; /* FLEX */
+    justify-content: center; /* horizontally centers items */
+    flex-wrap: wrap;  /* wrap flex items to next line as needed */
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1; /* makes header items the top layer */
+    height: 70px;
+    background-color: black;
+    align-items: center; /* vertically centers nav items */
+    border-bottom: 1px solid seashell; /* adds thin bottom border for style */
+}
+
+header img {
+    height: 50px;
+    padding-left: 10px; /* gives cushion/space to left of image */
+}
+
+nav {
+    text-align: right; /* shifts nav items to the right */ 
+    flex-grow: 1; 
+    /* The flex-grow property allows us to specify if items should 
+    grow to fill a container and also which items should 
+    grow proportionally more or less than others. 
+    
+    In this case, flex-grow: 1 pushes nav items to far right and 
+    header img to the far left.
+
+    Without flex-grow: 1, the "Tea Cozy" image and nav items
+    will collapse into the center.
+
+    INSIGHT: As a result, flex-grow: 1 is critical to the design of the
+    header and nav section of this website.
+    */
+}
+
+a {
+    color: seashell; /* changes color of anchor links */
+}
+
+nav span {
+    display: inline-block; /* displays nav items on same line */
+    padding: 20px 10px; /* adds space above and around na items */
+}
