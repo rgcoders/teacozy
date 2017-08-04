@@ -7,6 +7,10 @@ body {
     margin: 0px;
 }
 
+div {
+    display: block /* Displays an element as a block element (like <p>)*/
+}
+
 .flex-container {
     display: flex; /* FLEX */
     justify-content: center; /* horizontally centers items */
@@ -53,4 +57,24 @@ a {
 nav span {
     display: inline-block; /* displays nav items on same line */
     padding: 20px 10px; /* adds space above and around na items */
+}
+
+.main {
+    padding-top: 70px; /* adds padding above section content for styling */
+    opacity: 0.9; /* dims background photo */
+    width: 1200px;
+    margin: auto;
+}
+
+#mission {
+    height: 700px; /* sets section height */
+    background-image: url("../resources/photos/img-mission-background.jpg");
+    padding-top: 70px; /* adds padding above word content for styling */
+}
+
+#mission .content {
+    background-color: black; /* black background for styling */
+    width: 100%; /* ensures section spans width of page */
+    margin: auto; /* helps background image fill out page 
+                     vertically centers word content */
 }
