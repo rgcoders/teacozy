@@ -62,7 +62,8 @@ div {
 
 header {
     width: 100%;
-    position: fixed;
+    position: fixed; /* Fixes Header and Nav items in place. 
+                        That way, they stay in same place even when you scroll.*/
     z-index: 1; /* makes header items the top layer */
     height: 70px;
     background-color: black;
@@ -172,7 +173,13 @@ nav span {
     height: 200px;
 }
 
-#contact span{
+#contact a {
 text-decoration: underline;
 color:rgb(0, 51, 187);
+}
+
+footer {
+    text-align: left; /* Aligns footer left. Otherwise, it would be centered 
+                         per inherited Div styling. */
+    padding-left: 20px;
 }
