@@ -29,6 +29,12 @@ h4 {
     font-weight: bold;
 }
 
+h5 {
+    display: block;
+    font-size: 0.83em;
+    font-weight: bold;
+}
+
 div {
     display: block /* Displays an element as a block element (like <p>)*/
 }
@@ -161,4 +167,12 @@ nav span {
                           before it stretches or shrinks. */
     padding: 10px;
     margin: 5px 20px; /* puts spacing between columns so that backfround image comes through */
+}
+#contact {
+    height: 200px;
+}
+
+#contact span{
+text-decoration: underline;
+color:rgb(0, 51, 187);
 }
